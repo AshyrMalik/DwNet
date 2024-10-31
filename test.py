@@ -51,7 +51,7 @@ for i, data in enumerate(dataset):
 
         img_path = data['path'][0]
         frame_number = str(0)
-        print generated.size()
+        print (generated.size())
         print('process image... %s' % img_path+"   "+str(0))
         visualizer.save_images(webpage, util.tensor2im(generated.squeeze(dim = 0)), img_path, frame_number)
         visuals = OrderedDict([('synthesized_image', util.tensor2im(generated.squeeze(dim = 0)))])
