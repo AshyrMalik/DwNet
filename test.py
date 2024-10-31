@@ -35,7 +35,7 @@ else:
 video_group = 0
 
 for i, data in enumerate(dataset):
-    print "LOL"
+    print ("LOL")
     with torch.no_grad():
         if i >= opt.how_many:
             break
